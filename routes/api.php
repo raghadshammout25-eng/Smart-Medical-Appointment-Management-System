@@ -15,3 +15,5 @@ Route::apiResource('doctors', DoctorController::class);
 Route::apiResource('appointments', AppointmentController::class);
 Route::apiResource('medical-records', MedicalRecordController::class);
 Route::apiResource('notifications', NotificationController::class);
+Route::post('/login', [UserController::class, 'login'])->name('login'); // هذا يبقى مفتوح
+

@@ -19,8 +19,8 @@ return new class extends Migration
               $table->text('diagnosis');       // التشخيص
               $table->text('treatment');       // العلاج
               $table->date('visit_date');      // تاريخ الزيارة
-              $table->string('attachment')->nullable(); // ملف مرفق 
-              $table->timestamps(); 
+              $table->string('attachment')->nullable(); // ملف مرفق
+              $table->timestamps();
               // العلاقات
               $table->foreign('patient_id')
               ->references('patient_id')->on('patients')
