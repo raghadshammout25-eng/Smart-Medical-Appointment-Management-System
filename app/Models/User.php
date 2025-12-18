@@ -27,6 +27,7 @@ class User extends Authenticatable
     // علاقة One-to-One مع جدول الأطباء
     public function doctor()
     {
+
         return $this->hasOne(Doctor::class, 'user_id');
     }
 
